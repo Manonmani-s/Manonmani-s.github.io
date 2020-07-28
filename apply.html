@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project Presentation on Educational Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/66929353a9.js" crossorigin="anonymous"></script>
+    <style>
+    body {
+            background-image: url(/img/background.jpg)
+      
+    }
+    
+    .img-float {
+            float: left;
+            margin-right: 20px;
+        }
+
+    p {
+        text-align: justify;
+        font-family: 'Niconne', cursive;
+        font-weight: bold;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul> 
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about-us.html"><i class="fas fa-user"></i>  About Us</a></li>
+            <li><a href="courses.html"><i class="fas fa-chalkboard-teacher"></i> Courses</a></li>
+            <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+            <li class="current-page"><a href="apply.html"><i class="fas fa-tablet-alt"></i> Apply</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <div class="clearfix"></div>
+        </ul>
+    </nav>
+    <h1>Apply</h1>
+    <form action="#">
+
+        <div>
+            <label for="title" class="label-style">Title:</label>
+            <select id="title">
+                <option>Select Your Title</option>
+                <option>---------------------</option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="dr">Dr.</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="fname" class="label-style">First Name:</label>
+            <input type="text" id="fname" placeholder="Enter Your First Name.">
+        </div>
+
+        <div>
+            <label for="lname" class="label-style">Last Name:</label>
+            <input type="text" id="lname" placeholder="Enter your Last Name.">
+        </div>
+
+        <div>
+            <label for="email" class="label-style">Email Address:</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="email-confirm" class="label-style">Confirm Email Address:</label>
+            <input type="email" id="email-confirm" required>
+        </div>
+
+        <div>
+            <label for="pw" class="label-style">Enter Password:</label>
+            <input type="password" id="pw" required>
+        </div>
+
+        <div>
+            <label for="pw2" class="label-style">Re-Enter Password:</label>
+            <input type="password" id="pw2" required>
+        </div>
+
+        <div>
+            <span class="label-style">Select Your Course:</span>
+
+            <input type="radio" name="gender" id="male">
+            <label for="male">Web Dev</label>
+            
+            <input type="radio" name="gender" id="female">
+            <label for="female">System Admin</label>
+
+            <input type="radio" name="gender" id="other">
+            <label for="other">Online Marketing</label>
+        </div>
+
+        <div>
+            <label for="how-did-you-hear" class="label-style">How Did You Hear About Us?</label>
+            <textarea id="how-did-you-hear" cols="30" rows="7" placeholder="Enter your comments..."></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" id="accept-terms" required>
+            <label for="accept-terms">Accept our <a href="#">terms and conditions</a> blah blah blah.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="mailing-list" checked>
+            <label for="mailing-list">Subscribe to our mailing list.</label>
+        </div>
+
+        <div>
+            <div class="label-style"></div>
+            <input type="submit" value="Register Now!" style="color: darkblue;text-align: center;font-family: 'Niconne', cursive;font-size: 20px;background-color: gray;">
+        </div>
+
+    </form>
+    
+</body>
+</html>

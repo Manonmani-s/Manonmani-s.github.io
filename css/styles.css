@@ -1,0 +1,332 @@
+/* SITE UPDATED: JUN 15; 2020 BY MANONMANI
+CONTACT: MANO.HICET@GMAIL:COM
+
+GOOGLE FONT CODE:
+BODY FONT:
+font-family: 'Slabo 27px', serif;
+
+HEADER FONT:
+font-family: 'Charm', cursive;
+*/
+
+/*  HTML ELEMENTS */
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Slabo 27px', serif;
+    box-sizing:border-box;
+}
+body {
+    
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    font-family: ;
+    background-color: #faebd7;
+    /* background-image: url(/final_project/img/jess-bailey-l3N9Q27zULw-unsplash.jpg) */
+}
+
+/* HEADER DEFAULT VALUES */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Charm', cursive;
+    font-weight: normal;
+    text-align: center;
+    color: rgb(84, 39, 114);
+}
+h1 {
+    text-shadow: 2px 2px 2px rgba(2, 3,4 , .5);
+}
+/* LINK DEFAULT VALUES */
+a:link {
+    color: #850c0c;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #006600;
+}
+
+a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+a:active{
+    color: #00ff00;
+}
+
+/* TOP NAV CODE */
+nav > ul {
+    margin: -20px -20px 0 -20px;
+}
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    background-color: black;
+}
+nav > ul > li {
+    float: left;
+    width: 16.66%;
+}
+nav li {
+    text-align: center;
+}
+
+.subnav {
+    position: relative;
+}
+.subnav > ul {
+    position: absolute;
+    top: 100%; right: 0; left: 0;
+    display: none;
+    white-space: nowrap;
+}
+.subnav:hover > ul {
+    display: block;
+}
+
+nav a {
+    display: block;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+nav li a:link,
+nav li a:visited {
+    padding: 10px 20px;
+    color: rgb(123, 122, 136);
+}
+nav li a:hover,
+nav li.current-page > a,
+.subnav:hover > a {
+    color: black;
+    background-color: rgb(146, 101, 101);
+    text-decoration: none;
+}
+nav li.current-page > a {
+    pointer-events: none;
+}
+nav li a:active {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+/* END TOP NAV CODE */
+
+/* END HTML ELEMENTS */
+
+
+/* CSS CLASSES */
+
+/* END CSS CLASSES */
+
+
+/*ABOUT US CSS  */
+
+/* ABOUT US PAGE-ABOUT SECTION CLASS */
+.about-section{
+    background: url(/final_project/img/laptop.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: rgb(144, 160, 161);
+    overflow: hidden;
+    padding: 100px 0;
+    margin-top: 200px;
+
+}
+
+/* ABOUT SECTION CLASS ENDS */
+
+/* INNER CONTAINER CLASS */
+
+.inner-container {
+
+width: 55%;
+float: right;
+background-color: rgb(200, 204, 200);
+padding:20px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+/*INNER CONTAINER CLASS ENDS*/
+
+/* TEXT CLASS */
+.text {
+    font-size: 13px;
+    color: darkslategrey;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+
+}
+/* TEXT CLASS ENDS */
+
+/* SKILLS CLASS */
+.skills {
+     display: flex;
+    justify-content:space-between;
+    font-weight: 700;
+    font-size: 23px;
+    font-style: oblique;
+    
+    color: rgb(26, 43, 43);
+}
+/* SKILLS CLASS ENDS */
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+
+}
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+        
+    }
+    .inner-container{
+        width: 20%;
+    }
+
+}
+@media screen and (max-width:1000px){
+    .about-section{
+        
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+
+}
+/* ABOUT US CSS ENDS */
+
+/*  */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    
+    float: left;
+   border: #e4e7e4 solid;
+    margin-top: 20px;
+    column-width: 150px;
+    margin: 20px 20px 0px 20px;
+    background-color: rgb(228, 221, 216);
+  }
+  
+  
+  /* Clear floats after image containers */
+
+
+  .column {
+    float: left;
+    width: 30.33%;
+    padding: 5px;
+  } 
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+
+/* BEGIN FORM STYLES */
+form {
+
+    width: 50%;
+    margin: 0 auto;
+}
+
+form > div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+
+.label-style {
+    
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+    vertical-align: top;
+    /* font-family: 'Slabo 27px', serif; */
+    font-family: 'Niconne 30px', cursive;
+    color: darkslategrey;
+    
+
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* END FORM STYLES */
+
+/* UTILITY CLASSES */
+.clearfix {
+    clear: both;
+
+}
+/* END UTILITY CLASSES */
+
+.text-red {
+    color: #755555!important;
+}
+.text-pink {
+    color: #8b8087/*!important*/;   
+}
+.news-feed-heading {
+    font-size: 2.5rem !important;
+}
+.news-heading-intro {
+    font-size: 1.25rem!important;
+}
+.text-black {
+  color: #000 !important;
+}
+
+.fullbar-item:hover {
+  background: #969191;
+}
+
+@media screen and (max-width: 768px) {
+  .in-news {
+      margin-top: 20px;
+    font-size: 1.5rem !important;    
+  }
+
+  .news-feed-heading {
+      
+    font-size: 1.75rem !important; 
+
+  }
+  .feed-item-heading {
+    font-size: 1.25rem !important;
+    
+  }
+  .news-heading-intro {
+    font-size: 1rem !important;
+    
+
+  
+  }
+}
+.m-0{
+    text-align: center;
+}
+
+.address{
+    display: block;
+    margin:300px 300px 300px 300px;
+    text-align: justify;
+    font-weight: 900;
+    font-size: 20pt;
+    color: darkslategrey;
+}
